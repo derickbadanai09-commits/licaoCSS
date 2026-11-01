@@ -1,0 +1,86 @@
+.body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #050816, #101b3d, #34205c);
+    color: white;
+    padding: 40px 20px;
+}
+
+.form {
+    max-width: 650px;
+    margin: auto;
+    padding: 35px;
+    background: rgba(15, 25, 55, 0.95);
+    border: 2px solid #7b61ff;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(123, 97, 255, 0.4);
+}
+
+.label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    color: #d5caff;
+    font-weight: bold;
+}
+
+.textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #6956bd;
+    border-radius: 8px;
+    background-color: #202b4d;
+    color: white;
+    outline: none;
+}
+.textarea:focus {
+    border-color: #00e5ff;
+    box-shadow: 0 0 10px #00e5ff;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: #aaa;
+}
+.fieldset {
+    margin-top: 25px;
+    padding: 20px;
+    border: 1px solid #8c70ff;
+    border-radius: 12px;
+    background-color: rgba(0, 229, 255, 0.05);
+}
+.legend {
+    color: #00e5ff;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+.input[type="radio"],
+.input[type="checkbox"] {
+    accent-color: #8c70ff;
+    margin: 10px 5px;
+}
+.input[type="range"] {
+    width: 100%;
+    accent-color: #00e5ff;
+}
+.textarea {
+    resize: vertical;
+}
+.button {
+    margin-top: 20px;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #7254ff, #00bfff);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00e5ff;
+}
+.button[type="reset"] {
+    background: #424d6d;
+}
