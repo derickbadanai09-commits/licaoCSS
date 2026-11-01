@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <form action="/processar" method="post">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" required >
+
+        <label for="correo">Correo eletronico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="teléfono">Teléfono:</label>
+        <input type="number" name="telefono"
+        required pattern ="[0-9]" title="9 cifras">
+
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha de nacimiento" required minlength="18 años" maxlength="100">
+
+        <label for="passoword">Contraseña:</label>
+        <input type="password" id="passoword" name="passoword" required min="8">
+        <label for="fecha">Fecha de despegue:</label>
+        <input id="fecha" name="fecha de despegue" pattern="14/10/2026">
+        <label for="number">Numero de passajeros:</label>
+        <select name="Numero" id="numero passajeros">
+        <option value="">Eligir Passajeros</option>
+        <option value="passajero 1">Passajero 1</option>
+        <option value="passajero 2">Passajero 2</option>
+        <option value="passajero 3">Passajero 3</option>
+        <option value="passajero 4">Passajero 4</option>
+</select >
+<label for="curso">Clase de cabina:</label>
+<select id="Clase" name="Clase">
+    <option value="text">Eligir</option>
+    <option value="economica">Económica</option>
+    <option value="business">Business</option>
+    <option value="suits con vistas">Suits con vistas</option>
+</select>
+<fieldset>
+    <legend>Tipo de traje espacial</legend>
+    <label for="classico"></label>
+    <input type="radio" id="Classico" name="traje" value="Classico">Classico
+    <label for="Ligero"></label>
+    <input type="radio" id=" Ligero" name="traje" value="Ligero">Ligero
+    <label for="Premium"></label>
+    <input type="radio" id="Premium" name="traje" value=" Premium">Premium
+    <br>
+<label for="Destino">Destino del paseo lunar:</label>
+<select name="Destino" id="Destino">
+<option value="Destino">Eligir</option>
+<option value="Destino">Mar de la tranquilidad</option>
+<option value="Destino">Cráter lunar central</option>
+
+<input type="checkbox" name="servicios" value="comida_gourmet"> Comida gourmet
+<label for="servicios"></label>
+<input type="checkbox" name="servicios" value="foto_tierra"> Foto con la Tierra de fondo
+<label for="servicios"></label>
+<input type="checkbox" name="servicios" value="seguro_meteoritos">Seguro de meteoritos
+<label id="servicios"></label>
+<input type="checkbox" name="servicios" value="souvenirs">Souvenirs
+</label>
+</fieldset>
+<label for="nivel">Nivel de miedo a las alturas:</label>
+<input type="range" name=" nivel" id="nivel" min="0" max="10">
+
+<label for="mensaje">Comentarios:</label>
+<textarea id="mensaje" name="mensaje" rows="1"></textarea>
+ <label>
+    <input type="checkbox" name="aceito" required>
+    Aceito as condições
+      <button type="submit">Enviar</button>
+      <br>
+      <button name="reserva" id="reserva">Reservar mi plaza</button>
+      <button type="reset">Empezar de nuevo</button>
+  </label>
+</body>
+</html>
